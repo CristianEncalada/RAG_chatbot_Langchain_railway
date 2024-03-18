@@ -4,11 +4,6 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI
 from langchain_community.retrievers import TavilySearchAPIRetriever
 
-import os
-
-os.environ['OPENAI_API_KEY'] = 'YOUR_API_KEY'
-os.environ['TAVILY_API_KEY'] = 'YOUR_API_KEY'
-
 retriever = TavilySearchAPIRetriever(k=3)
 
 prompt = ChatPromptTemplate.from_template(
