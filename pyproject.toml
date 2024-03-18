@@ -6,7 +6,7 @@ authors = ["Cristian Encalada <crisencaladacamargo@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10.12"
 langserve = "^0.0.51"
 langchain-community = "^0.0.28"
 tavily-python = "^0.3.1"
