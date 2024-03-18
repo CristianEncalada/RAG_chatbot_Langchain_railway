@@ -3,7 +3,6 @@ from fastapi.responses import RedirectResponse
 from langserve import add_routes
 from app.chain import chain as chatbot_chain
 
-
 app = FastAPI(
     title="LangChain Server",
     version="1.0",
