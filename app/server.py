@@ -9,7 +9,6 @@ app = FastAPI(
     description="Spin up a simple api server using Langchain's Runnable interfaces",
 )
 
-
 @app.get("/")
 async def redirect_root_to_docs():
     return RedirectResponse("/docs")
@@ -17,7 +16,7 @@ async def redirect_root_to_docs():
 add_routes(
     app,
     chatbot_chain,
-    path="/openai",
+    path="/chatbot",
 )
 
 if __name__ == "__main__":
